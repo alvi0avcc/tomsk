@@ -1,0 +1,11 @@
+body>p{
+    color: blue;
+}
+
+h1+p{
+    color: red;
+}
+
+h1~p{
+    color: green;
+}

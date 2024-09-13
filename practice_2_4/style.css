@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color: blue;
+}
+
+.main-info{
+    color: darkred;
+    font-weight: bold;
+}
+
+.main-info .underline-text{
+    text-shadow: 2px 2px 5px lime;
+}
+
+#types-propisy{
+    color: lightskyblue;
+    text-shadow: 2px 2px 5px red;
+}
+
+#types-propisy li{
+    color: grey;
+    text-shadow: 2px 2px 5px red;
+}
+
+
+.fisrt-elem_ul{
+    color: chocolate;
+}
+
+ul li {
+    color: greenyellow;
+}
