@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Практика 2.6</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        video{
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+        }
+    </style>
 </head>
 <body>
     <!-- Тег <header> используется для содержимого шапки страницы -->
@@ -31,7 +42,7 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta ullam sit error aliquid voluptate quibusdam.</p>
             <!-- тег <figure> используется для компоновки мультимедиа -->
                 <figure>
-                   <img src="img/image.webp" alt="Марс" style="width: 500px;"> 
+                   <img src="img/image.webp" alt="Марс" style="height: 200px;"> 
                    <figcaption>Первый человек на Марсе - это Лидия</figcaption>
                 </figure>
         </article>
@@ -40,7 +51,7 @@
             <h2>О нас</h2>
             <p>Мы специслизируемся на всякой фигне......</p>
             <!-- пример использования <video> -->
-                <video controls style="width: 300px;">
+                <video controls>
                     <source src="video/VIDEO__1.MP4" type="video/mp4">
                 </video>
                 <audio controls>
