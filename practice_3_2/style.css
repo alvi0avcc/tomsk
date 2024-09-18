@@ -1,0 +1,7 @@
+a{
+    background-color: bisque;
+    width: 250px;
+    height: 150px;
+    padding: 40px; /* по вертикали работает не корректно*/
+    margin: 40px; /* по вертикали работает не корректно*/
+}
