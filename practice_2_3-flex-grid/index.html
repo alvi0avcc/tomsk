@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Форма обратной связи</title>
+</head>
+<body>
+
+    <form id="form-grid" method="POST" action="../practice_2_3/server.php">
+        <h2 class="form-name">Форма регистрации пользователя</h2>
+        <p class="version">Версия с использованием display: grid</p>
+        <hr>
+
+        <div class="grid">
+
+            <label for="user">Ваше имя</label>
+            <input type="text" name="user" id="user" placeholder="Введите имя" required>
+
+            <label for="pwd">Пароль</label>
+            <input type="password" name="pwd" id="pwd" placeholder="Введите пароль" required>
+
+            <label for="age">Возраст</label>
+            <input type="number" name="age" id="age" min="1" max="1000" step="1" placeholder="Введите возраст">
+
+            <label>Пол:</label>
+            <div id="gender">
+                <label class="selected" for="male">Мужской<input type="radio" value="male" name="gender" id="male"></label>
+                <label class="selected" for="female">Женский<input type="radio" value="female" name="gender" id="female"></label>
+            </div>
+
+            <label>Ваши увлечения:</label>
+            <div id="hobby">
+                <div class="selected">
+                    <label for="music">Музыка</label>
+                    <input type="checkbox" id="music" name="music">
+                </div>
+                <div class="selected">
+                    <label for="video">Видео</label>
+                    <input type="checkbox" id="video" name="video">
+                </div>
+                <div class="selected">
+                    <label for="picture">Рисование</label>
+                    <input type="checkbox" id="picture" name="picture">
+                </div>
+            </div>
+
+            <label>Ваша страна</label>
+            <select name="country" id="country">
+                <option value="Страна 1">Страна 1</option>
+                <option value="Страна 2">Страна 2</option>
+                <option value="Страна 3">Страна 3</option>
+            </select>
+
+            <label>Ваш город</label>
+            <select name="city" id="city">
+                <option value="Город 1">Город 1</option>
+                <option value="Город 2">Город 2</option>
+                <option value="Город 3">Город 3</option>
+            </select>
+
+            <label>Кратко о себе</label>
+            <textarea name="about" id="about" cols="35" rows="3" placeholder="Опишите себя"></textarea>
+
+            <label for="primer">Решите пример, запишите результат в поле ниже:</label>
+            <label>два + три =</label>
+            <input type="text" name="primer" id="primer">
+
+        </div>
+        
+        <div class="div-row">
+            <button type="reset">Отменить ввод</button>
+            <button type="submit">Данные подтверждаю</button>
+        </div>
+        
+    </form>
+
+</body>
+</html>

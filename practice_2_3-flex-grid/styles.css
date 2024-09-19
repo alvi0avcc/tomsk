@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: content-box;
 }
+
 form {
     border: 1px;
     width: 400px;
@@ -27,6 +28,7 @@ form {
     border: 0px;
     border-bottom: 1px;
     border-style: solid;
+    width: fit-content;
 }
 
 textarea {
@@ -42,19 +44,38 @@ button:hover {
     box-shadow: 1px 1px 10px gray;
 }
 
-select {
+/* select {
     width: 170px;
+} */
+
+/* for version with display: grid */
+
+.grid{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    row-gap: 5px;
+    margin: 5px 0;
 }
 
-input[type="text"]{
-    width: 200px;
+.version {
+    font-size: 0.7em;
+    color: gray;
+    margin-bottom: 2px;
 }
-input[type="password"]{
-    width: 200px;
+
+#gender{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
 }
-input[type="number"]{
-    width: 200px;
+
+#hobby{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
 }
-select{
-    width: 200px;
+
+label[for="primer"] {
+    grid-column: 1 / 3;
 }
+
