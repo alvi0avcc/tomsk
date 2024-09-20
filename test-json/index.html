@@ -19,12 +19,28 @@
     </form>
 
     <script>
+
+        const requestURL ="data.json";
+        const request = new XMLHttpRequest();
+        request.open("GET", requestURL);
+        request.responseType = "json";
+        request.send();
+
+        let data;
+
+        // request.onload = function () {
+        //     data = request.response;
+        //     console.log( data );
+        // };
+
         // Предположим, что JSON с данными загружается откуда-то
-        const data = {
+        data = {
             "russia": ["Москва", "Санкт-Петербург", "Новосибирск"],
             "usa": ["Вашингтон", "Нью-Йорк", "Лос-Анджелес"],
             "england": ["Лондон", "Манчестер", "Ливерпуль"]
         };
+
+        console.log( data );
 
         // Заполнение списка стран
         const countrySelect = document.getElementById('country');
