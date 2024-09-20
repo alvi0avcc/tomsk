@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выбор страны и города</title>
+</head>
+<body>
+    <form class="feedback_form" id="form_1">
+        <label for="country">Выберите страну</label>
+        <select name="select_country" id="country">
+            <option value="">Выберите страну</option>
+        </select>
+        <br>
+        <label for="city">Выберите город</label>
+        <select name="select_city" id="city">
+            <option value="">Сначала выберите страну</option>
+        </select>
+    </form>
+
+    <script>
+        // Предположим, что JSON с данными загружается откуда-то
+        const data = {
+            "russia": ["Москва", "Санкт-Петербург", "Новосибирск"],
+            "usa": ["Вашингтон", "Нью-Йорк", "Лос-Анджелес"],
+            "england": ["Лондон", "Манчестер", "Ливерпуль"]
+        };
+
+        // Заполнение списка стран
+        const countrySelect = document.getElementById('country');
+        const citySelect = document.getElementById('city');
+
+        for (let country in data) {
+            const option = document.createElement('option');
+            option.value = country;
+            option.textContent = country.charAt(0).toUpperCase() + country.slice(1);
+            countrySelect.appendChild(option);
+        }
+
+        // Обработчик изменения страны
+        countrySelect.addEventListener('change', function() {
+            const selectedCountry = this.value;
+            citySelect.innerHTML = ''; // Очищаем список городов
+
+            if (selectedCountry) {
+                // Добавляем опции городов в зависимости от выбранной страны
+                data[selectedCountry].forEach(function(city) {
+                    const option = document.createElement('option');
+                    option.value = city;
+                    option.textContent = city;
+                    citySelect.appendChild(option);
+                });
+            } else {
+                citySelect.innerHTML = '<option value="">Сначала выберите страну</option>';
+            }
+        });
+    </script>
+</body>
+</html>
