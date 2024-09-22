@@ -40,3 +40,19 @@ button{
     color: white;
     background-color: darkblue;
 }
+
+span{
+    float: left;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    float: right;
+}
+
+svg{
+    float: left;
+    position: absolute;
+    left: 100px;
+}
