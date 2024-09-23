@@ -1,0 +1,12 @@
+body{
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+}
+
+.centered{
+    background-color: aqua;
+    height: 300px;
+    width: 300px;
+    margin: auto;
+}
