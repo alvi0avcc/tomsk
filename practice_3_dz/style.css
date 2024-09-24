@@ -1,12 +1,14 @@
-*{
-    margin: 0;
-    padding: 0;
+header img{
+    height: 25px;
+    vertical-align: middle;
 }
 
-.gallery li {
-    float: left;
-    list-style: none;
-    border: 1px solid black;
-    text-align: center;
-    margin: 5px;
+details {
+    border: 1px solid blue;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+img.middle {
+    vertical-align: middle;
   }
