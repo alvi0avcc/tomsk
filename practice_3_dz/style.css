@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.gallery li {
+    float: left;
+    list-style: none;
+    border: 1px solid black;
+    text-align: center;
+    margin: 5px;
+  }

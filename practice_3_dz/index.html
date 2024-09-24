@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <ul id="pictures" class="gallery">
+    </ul>
+
+        <script>
+            let pictures;
+            const ul = document.getElementById('pictures');
+            for ( let n = 1; n < 17; n++ ){
+                const li = document.createElement('li');
+                const pic = document.createElement('img');
+                pic.src='img/'+n+'.avif';
+                pic.height='200';
+                ul.appendChild(li);
+                li.appendChild(pic);
+                let txt = document.createElement('div');
+                txt.innerHTML = n+".avif";
+                li.appendChild(txt);
+            }
+        </script>
+
+</body>
+</html>
