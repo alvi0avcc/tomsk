@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7f7f7;
+    color: #333;
+    text-align: center;
+    animation: fadeIn 1.5s linear;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+h2 {
+    margin-top: 20px;
+    color: #555;
+}
+
+p {
+    margin: 20px 20px;
+    font-size: 20px;
+}
+
+section {
+    padding: 40px 20px;
+}
+
+.flex-section {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    transition: background-color 0.9s ease-in-out 1s;
+}
+
+.flex-section:hover {
+    background-color: #e0e0e0;   
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    flex-basis: 500px;
+}
+
+.flex-item img {
+    width: 100%;
+}
+
+
+/* Анимации с использованием @keyframes */
+/* Плавное появление контента на странице */
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
