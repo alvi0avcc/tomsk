@@ -1,0 +1,40 @@
+
+*{
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(128, 128, 128);
+    border-radius: 5px;
+}
+
+body{
+    padding: 2px;
+    height: 100vh;
+}
+
+body>*{
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid rgb(128, 128, 128);
+    background-color: rgb(212, 212, 212);
+}
+
+header{
+    height: 50px;
+}
+
+aside{
+    float: left;
+    width: 20%;
+    height: calc(100% - 100px);
+}
+
+main{
+    float: left;
+    width: calc(60%);
+    height: calc(100% - 100px);
+}
+
+footer{
+    clear: both;
+    height: 50px;
+}
