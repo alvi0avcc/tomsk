@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            display: block;
+            padding: 10px 20px;
+            margin: 20px 0; /* Отступы для псевдоэлемента сверху и снизу от меню */
+            color: #44c09d;
+            transition: .5s;
+            position: relative;
+            left: 50px;
+        }
+
+        button::before{
+            display: block;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-top: 2px solid #44c09d;
+            border-bottom: 2px solid #44c09d;
+            transform: scaleY(1) rotate(45deg); /*Масштабирование увеличение */
+            transition: .5s; /* Плавный переход */
+            opacity: 1;
+            z-index: -1;
+        }
+
+        button::after{
+            display: block;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-left: 1px solid #44c09d;
+            border-right: 1px solid #44c09d;
+            transform: scaleX(2); /*Масштабирование увеличение */
+            transition: .5s; /* Плавный переход */
+            opacity: 1;
+            z-index: -1;
+        }
+
+        button:hover::after{
+            display: block;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-left: 2px solid #44c09d;
+            border-right: 2px solid #44c09d;
+            transform: scaleX(1) rotate(45deg); /*Масштабирование увеличение */
+            transition: .5s; /* Плавный переход */
+            opacity: 1;
+            z-index: -1;
+        }
+
+        button:hover::before{
+            display: block;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-top: 1px solid #44c09d;
+            border-bottom: 1px solid #44c09d;
+            transform: scaleY(2); /*Масштабирование увеличение */
+            transition: .5s; /* Плавный переход */
+            opacity: 1;
+            z-index: -1;
+        }
+
+    </style>
+</head>
+<body>
+    <button>123</button>
+</body>
+</html>
