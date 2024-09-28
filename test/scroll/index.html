@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #info{
+            position: fixed;
+            left: 10;
+            top: 20px;
+        }
+
+        #menu{
+            position: fixed;
+            top: 60px;
+            left: 10px;
+            padding: 5px;
+            display: inline-flex;
+            flex-direction: column;
+            border: 1px solid black;
+        }
+
+        #menu li{
+            list-style: none;
+            padding: 5px;
+            border: 1px solid black;
+            width: 50px;
+        }
+    </style>
+
+    <script>
+        window.onscroll = function ()
+        {
+            var el = document.documentElement;
+            var scroll = el.scrollTop;
+            var info = document.getElementById('info');
+            info.innerHTML = 'scroll Y = ' + scroll;
+            var menu = document.getElementById('menu');
+
+            if ( scroll > 100 ) {
+                menu.style.cssText = 'flex-direction: row';
+            } else {
+                menu.style.cssText = 'flex-direction: column';
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <p>Прокрутите страницу вниз</p>
+    <p id="info">scroll Y = 0</p>
+    <ul id="menu">
+        <li>111</li>
+        <li>222</li>
+        <li>333</li>
+        <li>444</li>
+        <li>555</li>
+    </ul>
+
+    <div style="height: 4567px"></div>
+</body>
+</html>
