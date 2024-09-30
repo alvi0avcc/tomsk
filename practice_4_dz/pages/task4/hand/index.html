@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практика 3.2.1</title>
+    <link rel="stylesheet" href="../style_for_pages.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="style-768px.css">
+    <link rel="stylesheet" media="screen and (max-width: 412px)" href="style-412px.css">
+</head>
+<body>
+    <header>
+        <h1>Искусственный интелект</h1>
+    </header>
+    <nav>
+        <img src="../../../img/logo.svg" alt="logo">
+        <a href="../../../index.html">Вернуться на главную страницу.</a>
+    </nav>
+
+    <main>
+        <section class="flex-section">
+            <h2>Искусственный интелект в Ежедневной Жизни</h2>
+            <p>Искусственный интелект (ИИ) уже активно применяется в различных областях нашей жизни, улучшая качество услуг и повышая нашу продуктивность</p>
+
+            <div class="flex-container">
+                <div class="flex-item">
+                    <img src="../img/1.jpg" alt="ИИ в медицине">
+                    <details open>
+                        <summary id="123">Информация</summary>
+                        <p>ИИ помогает врачам в диагностике заболеваний, анализе медицинских изображений и разработке персонализированных планов лечения. Например, алгоритмы ИИ могут анализировать МРТ и КТ сканы, выявляя аномалии с точностью,
+                            сопоставимой с экспертами.</p>
+                    </details>
+                    
+                </div>
+                <div class="flex-item">
+                    <img src="../img/2.jpg" alt="ИИ в транспорте">
+                    <details open>
+                        <summary>Информация</summary>
+                        <p>ИИ используется для управления автономными транспортными средствами, оптимизации маршрутов и повышения безопасности дорожного движения. Системы ИИ способны предсказывать пробки и предлагать альтернативные пути, что
+                            сокращает время в пути и уменьшает заторы.</p>
+                    </details>
+                    
+                </div>
+                <div class="flex-item">
+                    <img src="../img/3.jpg" alt="ИИ в рекомендательных системах">
+                    <details open>
+                        <summary>Информация</summary>
+                        <p>ИИ применяется для создания рекомендательных систем, которые предлагают фильмы, музыку и игры на основе предпочтений пользователя. Алгоритмы машинного обучения анализируют поведение пользователей и предлагают контент,
+                            который им может понравиться.</p>
+                    </details>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        window.onresize = function () {
+            const details = document.getElementsByTagName("details");
+
+            const arr = [].slice.call( details );
+
+            arr.forEach( element => {
+                const summary = element.getElementsByTagName('summary')[0];
+                const display = window.getComputedStyle(summary).getPropertyValue('display');
+                if ( display == 'none') {
+                    element.setAttribute('open', '');
+                } else {
+                    element.removeAttribute('open');
+                }
+            });
+
+        }
+
+    </script>
+
+</body>
+</html>

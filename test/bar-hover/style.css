@@ -1,0 +1,29 @@
+#bar {
+    position: absolute;
+    top: -4em;
+    right: 5em;
+    padding: .5em;
+    margin: 0;
+    width: 2em;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    transition: transform 1s ease-in-out, top 3s ease-in-out;
+  }
+  
+  #bar:hover {
+    top: 0;
+    transform: rotate(45deg);
+    animation: rotate-bar 1s ease-in-out 3s forwards;
+
+  }
+  
+  @keyframes rotate-bar {
+    0% {
+      transform: rotate(45deg);
+    }
+    100% {
+      transform: rotate(90deg);
+    }
+  }
+  
