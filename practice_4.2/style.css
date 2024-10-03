@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+h1{
+    text-align: center;
+    margin-top: 48px;
+}
+
+.types-data{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    color: hsl(hue, saturation, lightness);
+}
+
+.type-data{
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border-radius: 6px;
+}
+
+.getDescriptionTypeData{
+    background-color: bisque;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 2px solid black;
+    outline: none;
+    cursor: pointer;
+}
+
+#test{
+    display: flex;
+    flex-wrap: wrap;
+}
