@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        const btn = document.createElement('span');
+        btn.innerHTML='*';
+        btn.style.backgroundColor = 'transparent';
+        btn.style.color = 'blue';
+        btn.style.fontSize ='50px';
+        btn.style.position = 'absolute';
+        btn.style.top = '-30px';
+        btn.style.transition = '0.5s';
+
+
+    for ( i =0; i < 10; i++ ){
+        btn.setAttribute('id',`btn-${i}`);
+        btn.style.left = `${50+i*100}px`;
+        document.body.appendChild(btn.cloneNode(true));
+    }
+
+        const move = setInterval(()=>{
+            for ( i=0; i<10; i++){
+                let cur = document.getElementById(`btn-${i}`);
+                let x = cur.style.left.slice(0,-2);
+                let y = cur.style.top.slice(0,-2);
+
+                y = Number(y) + (Math.random()*10-3);
+                x = Number(x) + ( Math.random()*5-2.5 );
+                cur.style.left = `${x}px`;
+                cur.style.top = `${y}px`;
+                cur.style.opacity = `${Math.random()}`;
+                cur.style.transform = `rotate(${Math.random()*180-90}deg)`;
+            };
+            
+        },50);
+
+        setTimeout(()=>{
+            clearInterval(move);
+        },10000);
+
+    </script>
+
+</body>
+</html>
