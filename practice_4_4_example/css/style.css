@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    padding: 48px 24px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Изменять при media-запросе */
+    flex-direction: row-reverse;
+}
+
+
+.burger-menu {
+    display: none; /* Изменять при media-запросе */
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.burger-bar{
+    background-color: #fff;
+    width: 30px;
+    height: 3px;
+}
+
+.menu {
+    display: flex; /* Изменять при media-запросе */
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu a {
+    color: #fff;
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #ffffff82;
+    font-size: 24px;
+}
