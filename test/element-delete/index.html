@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="btn-remove">Удалить кнопку 1</button>
+    <button id="btn">Кнопка 1 - для удаления</button>
+
+
+    
+<script>
+    const btn = document.getElementById('btn');
+    const btnRemove = document.getElementById('btn-remove');
+
+    btnRemove.addEventListener('click', function(){ btn.remove()});
+</script>
+
+</body>
+</html>
