@@ -1,0 +1,11 @@
+@media screen and  (max-width: 768px) {
+    header{
+        justify-content: end;
+    }
+    .burger-menu{
+        display: flex;
+    }
+    .menu{
+        display: none;
+    }
+}
