@@ -27,6 +27,7 @@ header {
     background-color: #fff;
     width: 30px;
     height: 3px;
+    transition: 0.25s;
 }
 
 .menu {
@@ -38,7 +39,7 @@ header {
 .menu a {
     color: #fff;
     font-size: 24px;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 .menu a:hover {
