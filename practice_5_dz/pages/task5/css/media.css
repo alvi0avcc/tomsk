@@ -1,0 +1,13 @@
+@media screen and (max-width: 768px) {
+    header {
+        justify-content: end; /* Изменять при media-запросе */
+    }
+
+    .burger-menu {
+        display: flex; /* Изменять при media-запросе */
+    }
+
+    .menu {
+        display: none; /* Изменять при media-запросе */
+    }
+}

@@ -1,0 +1,14 @@
+header img{
+    height: 25px;
+    vertical-align: middle;
+}
+
+details {
+    border: 1px solid blue;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+img.middle {
+    vertical-align: middle;
+  }
