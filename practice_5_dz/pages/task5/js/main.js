@@ -67,3 +67,17 @@ window.addEventListener('resize', function(){
         nav.style.backgroundColor = "";
     }
 });
+
+// закрытие бургер-меню после клика по пункту меню (используя погружение)
+
+const elMenu = document.querySelector('.menu');
+elMenu.addEventListener('click', function(event){
+    // console.dir(event.target);
+    if (event.target.localName == 'a'){
+        // с проверкой какой вид меню сейчас используется
+        if ( burgerMenu.style.display == 'flex' ){
+            isOpenMenu = false;
+            BurgerMenu(isOpenMenu);
+        }
+    }
+}, true);
