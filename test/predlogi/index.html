@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <span></span>
+
+    <script>
+        // Скрипт для удаления висячих прелогов 
+        function removeHangingPrepositions(text) {
+            // return text.replace(/(in|on|at|to|for|with|by|about|of|from|over|under|он)\s/gi, '$1&nbsp');
+            return text.replace(/(в|на|за|под|перед|около|между|из|до|с|по|через|для|без)\s/gi, '$1&nbsp');
+        }
+
+        //сработает на "из текста" , будет переносить их вместе не разрывая
+        const text = "Это пример из текста, чтобы понять, с из он связан.";
+        const cleanedText = removeHangingPrepositions(text);
+        console.log(cleanedText);
+        let span = document.querySelector('span');
+        span.innerHTML = cleanedText;
+    </script>
+</body>
+</html>
