@@ -45,22 +45,34 @@ aside{
 
 #aside-left{
     width: var(--aside-left-width);
-    /* менять от размера*/
-    /* display: none;  */
     margin-right: var(--main-margin-w);
+}
 
+.aside-left-show-hide{
+    display: none;
 }
 
 #aside-right{
     width: var(--aside-right-width);
-    /* менять от размера*/
-    /* display: none; */
     margin-left: var(--main-margin-w);
+}
 
+.aside-right-show-hide{
+    display: none;
+}
+
+#side-menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.side-menu-show{
+    display: flex !important;
 }
 
 #main{
     display: flex;
+    flex-direction: column;
     width: 100vw;
     /* width: var(--main-width); */
     border-radius: 5px;

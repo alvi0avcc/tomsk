@@ -7,9 +7,10 @@
     <title>AVCC testing platform</title>
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/my_reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <link rel="stylesheet" href="css/my_reset.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/media.css" type="text/css">
     
 </head>
 <body>
@@ -20,7 +21,7 @@
     </header>
 
     <div id="main-total">
-        <aside id="aside-left">
+        <aside id="aside-left" class="aside-left-show-hide">
             <ul>
                 <li>Main</li>
                 <li>Elevators</li>
@@ -33,10 +34,14 @@
         </aside>
 
         <main id="main">
+            <div id="side-menu">
+                <button id="left-menu-button" class="left-menu-button-show">X</button>
+                <button id="right-menu-button">X</button>
+            </div>
             main
         </main>
 
-        <aside id="aside-right">
+        <aside id="aside-right" class="aside-right-show-hide">
             <ul>
                 <li><a href="https://www.gafta.com/" target="_blank">GAFTA</a></li>
                 <li><a href="https://www.fosfa.org/" target="_blank">FOSFA</a></li>
@@ -55,6 +60,6 @@
 
     <footer></footer>
 
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
