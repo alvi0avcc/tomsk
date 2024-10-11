@@ -1,33 +1,3 @@
-window.addEventListener('resize' , function (){
-    const small = 540;
-    const medium = 820;
-
-    const currentSize = window.innerWidth;
-
-    // console.log(currentSize);
-    
-    const left = document.getElementById('aside-left');
-    const right = document.getElementById('aside-right');
-    const main = document.getElementById('main');
-
-    // switch ( true ) {
-    //     case ( currentSize > 820 ) :
-    //         left.style.display = '';
-    //         right.style.display = '';
-
-    //     break;
-        
-    //     case ( currentSize > 540 ):
-    //         left.style.display = 'none';
-    //         right.style.display = '';
-    //     break;
-           
-    //     default:
-    //         left.style.display = 'none';
-    //         right.style.display = 'none';
-    //     break;
-    // }
-});
 
 const leftMenuButton = document.getElementById('left-menu-button');
 leftMenuButton.addEventListener('click', ()=>{
@@ -42,3 +12,31 @@ rightMenuButton.addEventListener('click', ()=>{
     rightMenu.classList.toggle('side-menu-show');
 
 });
+
+
+// Swiper
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    // direction: 'vertical',
+    slidesPerView: 3,
+    loop: true,
+    spaceBetween: 5,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    // scrollbar: {
+    //   el: '.swiper-scrollbar',
+    // },
+  });

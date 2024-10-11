@@ -6,6 +6,7 @@
     
     <title>AVCC testing platform</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/reset.css" type="text/css">
     <link rel="stylesheet" href="css/my_reset.css" type="text/css">
@@ -38,7 +39,53 @@
                 <button id="left-menu-button" class="left-menu-button-show">X</button>
                 <button id="right-menu-button">X</button>
             </div>
-            main
+            
+            <section class="main-section">
+
+                <div class="card-head">
+                    <p>Grain Elevators</p>
+                </div>
+
+                <!-- Slider main container -->
+                <div class="swiper card-head">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="img/elevators/piles.png" alt="Slide 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/elevators/small/elevator-1.png">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/elevator-3.png" alt="Slide 3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/elevator-4.png" alt="Slide 4">
+                        </div>
+                        
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+
+            <div class="card-description">
+                <p>This project is intended for calculating the volume of heaps of cargo. Primarily grains. The idea is based on keeping the required measurements to a minimum and maintaining acceptable accuracy.</p>
+                <p>Examples of generated reports.</p>
+                <p>For single warehouse - report-1
+                For many different warehouses - report-2</p>
+                <hr>
+            </div>
+                
+            </section>
+
         </main>
 
         <aside id="aside-right" class="aside-right-show-hide">
@@ -50,7 +97,7 @@
                 <li><a href="https://group.bureauveritas.com/" target="_blank">Bureau Veritas</a></li>
                 <li><a href="https://www.controlunion.com/" target="_blank">Control Union</a></li>
                 <li><a href="https://www.sgs.com/" target="_blank">SGS</a></li>
-                <li><a href="https://bastico.com/" target="_blank">BASTICO</a></li>
+                <!-- <li><a href="https://bastico.com/" target="_blank">BASTICO</a></li> -->
                 <li><a href="https://argositech.com/" target="_blank">Argos Inspection & Technologies</a></li>
                 <li><a href="https://www.intertek.com/" target="_blank">Intertek</a></li>
             </ul>
@@ -60,6 +107,7 @@
 
     <footer></footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

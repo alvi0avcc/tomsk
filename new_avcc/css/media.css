@@ -11,12 +11,12 @@
     .aside-left-show-hide{
         display: none;
     }
-    .aside-right-show{
+    .aside-right-show-hide{
         display: flex;
     }    
 }
 
-@media screen and ( min-width:  820px ) {
+@media screen and ( min-width: 820px ) {
     .aside-left-show-hide{
         display: flex;
     }
