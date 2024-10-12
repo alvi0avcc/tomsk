@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    padding: 48px 24px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Изменять при media-запросе */
+    flex-direction: row-reverse;
+    border-radius: 10px
+}
+
+
+.burger-menu {
+    display: none; /* Изменять при media-запросе */
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.burger-bar{
+    background-color: #fff;
+    width: 30px;
+    height: 3px;
+    transition: 0.25s;
+}
+
+.menu {
+    display: flex; /* Изменять при media-запросе */
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu a {
+    color: #fff;
+    font-size: 24px;
+    transition: 0.2s;
+}
+
+.menu a:hover {
+    color: #ffffff82;
+    font-size: 24px;
+}
+
+h1, h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+section{
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    border-radius: 10px
+}
+
+.contacts-list{
+    margin: auto;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.contacts-list li a {
+    color: white;
+}
+
+img{
+    float: left;
+    width: 200px;
+    margin: 5px 10px 5px 0px;
+    transition: 0.5s;
+}
+
+img:hover{
+    width: 300px;
+}
+
+#services{
+    text-align: center;
+}
+
+#services div {
+    margin: 5px;
+    padding: 5px;
+    border: 2px red;
+    border-style: dotted;
+    border-radius: 10px;
+    animation: 2s linear infinite dash-dot;
+}
+
+@keyframes dash-dot {
+    from{
+        border-color: red;
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(2deg);
+        border-color: blue;
+    }
+    50%{
+        transform: rotate(0deg);
+        border-color: lime;
+    }
+    75%{
+        transform: rotate(-2deg);
+        border-color: blue;
+    }
+    to{
+        transform: rotate(0deg);
+        border-color: red;
+    }
+    
+}
