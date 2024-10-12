@@ -18,9 +18,46 @@ rightMenuButton.addEventListener('click', ()=>{
 
 });
 
+function SwiperImgLoading( parentElementId = '', imgPath = '', quantity = 0) {
+
+  let result ={
+    parentElementId : parentElementId,
+    imgPath: imgPath,
+    quantity: quantity,
+    message : '',
+  };
+
+  if (parentElementId == '') {
+    result.message += `parentElementId (${parentElementId}) - incorrect. `;
+  };
+  if (imgPath == '') {
+    result.message += `imgPath (${imgPath}) - incorrect. `;
+  }
+  if ( typeof quantity != 'number'|| quantity <= 0 ){
+    result.message += `quantity (${quantity}) - incorrect. `;
+  }
+
+  if (result.message != '') return result;
+
+  const parentElement = document.getElementById(parentElementId);
+  for (i=0; i<quantity; i++){
+    const slider = document.createElement('div');
+    slider.classList.add('swiper-slide');
+    const img = document.createElement('img');
+    img.src = imgPath+i+'.png';
+    img.alt = `Slide ${i}`;
+    slider.appendChild(img);
+    parentElement.appendChild(slider);
+  }
+  return result;
+}
+
+// loading images for elevators swiper
+let message = SwiperImgLoading( 'swiper-elevator', 'img/elevators/small/', 13);
+// console.log( message );
+
 
 // Swiper
-
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     // direction: 'vertical',

@@ -17,7 +17,10 @@
     <header>
         <img id="logo" src="img/logo/logo.svg" alt="main logo">
         <p>AVCC - Private project, testing platform</p>
-        <img id="logo" src="img/logo/logo.svg" alt="">
+        <a title='Buy Me a Coffee'
+          href="https://www.buymeacoffee.com/alviuao" target="_blank" rel="noopener noreferrer">
+          <img id="logo" src="https://media.giphy.com/media/TDQOtnWgsBx99cNoyH/giphy.gif" alt="Buy Me A Coffee"/>
+        </a>
     </header>
 
     <div id="main-total">
@@ -33,11 +36,11 @@
             </ul>
         </aside>
 
+        <button id="left-menu-button">⇩ Content ⇩</button>
+        <button id="right-menu-button">⇩ Useful ⇩</button>
+
         <main id="main">
-            <!-- <div id="side-menu"> -->
-                <button id="left-menu-button">⇩ Content ⇩</button>
-                <button id="right-menu-button">⇩ Useful ⇩</button>
-            <!-- </div> -->
+                
             
             <section id="content-elevator" class="main-section">
 
@@ -48,20 +51,9 @@
                 <!-- Slider main container -->
                 <div class="swiper card-head">
                     <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
+                    <div id="swiper-elevator" class="swiper-wrapper">
                         <!-- Slides -->
-                        <div class="swiper-slide">
-                            <img src="img/elevators/piles.png" alt="Slide 1">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/elevators/small/elevator-1.png">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/elevator-3.png" alt="Slide 3">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/elevator-4.png" alt="Slide 4">
-                        </div>
+                        <!-- loaded by js function SwiperImgLoading -->
                         
                     </div>
                     <!-- If we need pagination -->
@@ -75,15 +67,27 @@
                     <!-- <div class="swiper-scrollbar"></div> -->
                 </div>
 
-            <div class="card-description">
-                <p>This project is intended for calculating the volume of heaps of cargo. Primarily grains. The idea is based on keeping the required measurements to a minimum and maintaining acceptable accuracy.</p>
-                <p>Examples of generated reports.</p>
-                <p>For single warehouse - <a href="doc/elevators/warehouse_report.pdf" target="_blank">report-1</a>
-                For many different warehouses - <a href="doc/elevators/warehouses_report.pdf" target="_blank">report-2</a></p>
-                <a href="https://avcc.sytes.net/elevators/" target="_blank">Go to the "Elevators" project website.</a>
-                <hr>
-            </div>
+                <div class="card-description">
+                    <p>This project is intended for calculating the volume of heaps of cargo. Primarily grains. The idea is based on keeping the required measurements to a minimum and maintaining acceptable accuracy.</p>
+                    <p>Examples of generated reports.</p>
+                    <p>For single warehouse - <a href="doc/elevators/warehouse_report.pdf" target="_blank">report-1</a>
+                    For many different warehouses - <a href="doc/elevators/warehouses_report.pdf" target="_blank">report-2</a></p>
+                    <a href="https://avcc.sytes.net/elevators/" target="_blank">Go to the "Elevators" project website.</a>
+                    <hr>
+                </div>
                 
+            </section>
+
+            <section>
+
+            </section>
+
+            <section id="advertisement">
+                <a
+                    title='Buy Me a Coffee'
+                    href="https://www.buymeacoffee.com/alviuao" target="_blank" rel="noopener noreferrer">
+                    <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExc21jbHVoNjdvencydnp6amI2eGc3ZGVoZzBodmEyc3Y1ZXFnNzYxdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/hXMGQqJFlIQMOjpsKC/giphy.gif" alt="Buy Me A Coffee"/>
+                </a>
             </section>
 
         </main>
@@ -105,7 +109,14 @@
 
     </div>
 
-    <footer></footer>
+    <footer>
+        <div>
+            <a href="#content-elevator">© 2024 AVCC</a>
+            <a href="https://www.facebook.com/profile.php?id=100002819184477" target="_blank">Facebook</a>
+            <a href="https://www.linkedin.com/in/aleksandr-vavilov-avcc/" target="_blank">LinkedIn</a>
+            <a href="https://www.buymeacoffee.com/alviuao">BuyMeCoffee</a>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
