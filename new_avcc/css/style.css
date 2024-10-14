@@ -207,10 +207,9 @@ footer{
 }
 
 footer div{
-    margin: auto;
     display: flex;
+    align-items: center;
     gap: 10px;
-    font-size: 1em;
 }
 
 footer div a {
@@ -221,7 +220,6 @@ footer div a {
 #advertisement{
     display: grid;
     grid-template-rows: 5px 50px;
-    /* flex-direction: row-reverse; */
 }
 
 #advertisement h6 {
@@ -238,7 +236,7 @@ footer div a {
 #advertisement div a {
     background-color: var(--text-color);
     border-radius: 10px;
-    margin: auto 0;
+    /* margin: auto 0; */
     height: 100%;
 }
 

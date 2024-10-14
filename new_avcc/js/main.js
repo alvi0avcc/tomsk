@@ -1,4 +1,4 @@
-
+// Menu button -left
 const leftMenuButton = document.getElementById('left-menu-button');
 leftMenuButton.addEventListener('click', ()=>{
     const leftMenu = document.getElementById('aside-left');
@@ -8,6 +8,7 @@ leftMenuButton.addEventListener('click', ()=>{
     leftMenuBtn.classList.toggle('left-menu-button-pos::before');
 });
 
+// Menu button -right
 const rightMenuButton = document.getElementById('right-menu-button');
 rightMenuButton.addEventListener('click', ()=>{
     const rightMenu = document.getElementById('aside-right');
@@ -18,6 +19,8 @@ rightMenuButton.addEventListener('click', ()=>{
 
 });
 
+
+// Swiper function for include into site
 function SwiperImgLoading( parentElementId = '', imgPath = '', quantity = 0) {
 
   let result ={
@@ -52,7 +55,7 @@ function SwiperImgLoading( parentElementId = '', imgPath = '', quantity = 0) {
   return result;
 }
 
-let message = ''; //message for result of loading images
+let message = ''; //message for result of loading images (if needed)
 
 // loading images for elevators swiper
 message = SwiperImgLoading( 'swiper-elevator', 'img/elevators/small/', 13);
@@ -76,6 +79,7 @@ const swiper = new Swiper('.swiper', {
     spaceBetween: 5,
     centeredSlides: true,
 
+    //adoptation qtn slides for width of screen
     breakpoints: {
       // when window width is >= 1500px
       1500: {
