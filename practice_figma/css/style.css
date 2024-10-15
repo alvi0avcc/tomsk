@@ -119,6 +119,7 @@ main{
         font-size: 0.938vw;
         font-weight: 500;
         line-height: 152%;
+        color: #fff; /*проверить*/
         background-color: #1f3a93;
     }
 }
