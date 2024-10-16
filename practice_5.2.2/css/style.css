@@ -82,7 +82,7 @@
     padding: 164px 24px 28px 39px;
 }
 
-.flex_grid-item{
+.flex_grid-item {
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -117,4 +117,31 @@
 
 .grid-item p {
     line-height: 150%;
+}
+
+
+/* footer */
+
+footer {
+    padding: 46px 0px 40px;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #7e868e;
+}
+
+footer .flex-column {
+    gap: 22px;
+}
+
+footer .flex-container:first-child {
+    gap: 16px 43px;
+}
+
+footer a{
+    transition: 0.3s;
+}
+
+footer a:hover{
+    color: #1f3a93;
 }
