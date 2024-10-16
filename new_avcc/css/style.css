@@ -35,8 +35,6 @@ a:active{
     color: #000fff;
 }
 
-
-
 a:hover{
     text-shadow: 1px 1px #fff;
 }
@@ -63,7 +61,6 @@ header{
 
 #main-total{
     display: flex;
-    flex-direction: row;
     height: var(--main-height);
     padding: var(--main-margin-h) 0;
 }
@@ -186,9 +183,15 @@ aside ul li{
 
 .swiper-slide{
     display: flex;
+    align-items: center;
 }
 
 .swiper img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.big-image{
     width: 100%;
     object-fit: contain;
 }
@@ -244,4 +247,8 @@ footer div a {
     height: 100%;
     background-color: var(--text-color);
     border-radius: 10px;
+}
+
+.img-hover:hover{
+    cursor: pointer;
 }

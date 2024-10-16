@@ -15,7 +15,7 @@
                     throw new Error(`Network error: ${response.status}`);
                   };
                 // response.json().then((data) => {console.log('VisitCounter=', data);})
-                console.log('counter response = ',response.statusText);
+                // console.log('counter response = ',response.statusText);
             }
         )
     .catch( error => {
