@@ -1,0 +1,24 @@
+/* Общие классы */
+
+*{
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.wrapper {
+    width: 61.45%;
+    margin: 0 auto;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+h2 {
+    color: #000;
+    text-align: center;
+    font-size: 36px;
+    line-height: 133%;
+}
