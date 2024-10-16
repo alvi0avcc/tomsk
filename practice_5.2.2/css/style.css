@@ -1,13 +1,12 @@
-
 .catalog {
-    padding: 100px 0px;
     background-color: #ecf0f1;
 }
 
 .flex-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -15,7 +14,14 @@
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 2px 8px 16px 0 rgba(194, 198, 208, 0.06);
+    max-width: 380px;
+    min-width: 320px;
 }
+
+.flex-item img {
+    width: 100%;
+}
+
 
 .text_flex-item {
     padding: 50px 44px;
@@ -25,13 +31,90 @@
     margin-bottom: 12px;
     font-size: 24px;
     line-height: 143%;
-    color: #2e363e;
 }
 
 .text_flex-item .description_flex-item {
     margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 150%;
 }
 
 .text_flex-item .price {
     margin-bottom: 14px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    color: #434b53;
+}
+
+.text_flex-item button {
+    border-radius: 8px;
+    padding: 20px 40px;
+    background-color: #1f3a93;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 152%;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+}
+
+.text_flex-item button:hover {
+    background-color: #032081;
+}
+
+
+/* Секция grid */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.grid-item {
+    border: 2px solid #e2eaf2;
+    border-radius: 5px;
+    height: 326px;
+    padding: 164px 24px 28px 39px;
+}
+
+.flex_grid-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.grid-item-1 {
+    grid-column: 1 / 8;
+    grid-row: 1 / 2;
+}
+
+.grid-item-2 {
+    grid-column: 8 / 13;
+    grid-row: 1 / 2;
+}
+
+.grid-item-3 {
+    grid-column: 1 / 6;
+    grid-row: 2 / 3;
+}
+
+.grid-item-4 {
+    grid-column: 6 / 13;
+    grid-row: 2 / 3;
+}
+
+.grid-item h3 {
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 143%;
+    color: #1f3a93;
+}
+
+.grid-item p {
+    line-height: 150%;
 }

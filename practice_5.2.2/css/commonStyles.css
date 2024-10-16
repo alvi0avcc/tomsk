@@ -1,8 +1,9 @@
 /* Общие классы */
 
-*{
+* {
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
+    color: #2e363e;
 }
 
 .wrapper {
@@ -21,4 +22,8 @@ h2 {
     text-align: center;
     font-size: 36px;
     line-height: 133%;
+}
+
+.padding-top-bottom-section {
+    padding: 100px 0px;
 }
