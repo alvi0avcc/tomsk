@@ -6,6 +6,27 @@
 }
 
 @media screen and (max-width: 720px) {
+    header {
+        padding: 30px 32px;
+    }
+
+    /* burger-menu */
+
+    header {
+        justify-content: end;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+    /* Должны быть стили для адаптивной вресии меню */
+
+
     /* .wrapper {
         width: 61.45%;
     } */

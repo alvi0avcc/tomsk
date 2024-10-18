@@ -1,3 +1,59 @@
+/* header */
+
+header {
+    padding: 50px 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.burger-bar {
+    width: 25px;
+    height: 2px;
+    background-color: #3a4f39;
+    transition: 0.3s;
+}
+
+.menu {
+    display: flex;
+    gap: 41px;
+}
+
+.menu a,
+.navigation-adaptive a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    transition: 0.3s;
+}
+
+.menu a:hover,
+.navigation-adaptive a:hover {
+    color: #FFC107;
+}
+
+.navigation-adaptive {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    position: absolute;
+    top: 77.95px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+
+/* Секция catalog */
 .catalog {
     background-color: #ecf0f1;
 }
@@ -119,6 +175,16 @@
     line-height: 150%;
 }
 
+/* slider */
+.swiper {
+    max-width: 100%;
+}
+
+.swiper img {
+    width: 100%;
+    background-size: cover;
+}
+
 
 /* footer */
 
@@ -138,10 +204,10 @@ footer .flex-container:first-child {
     gap: 16px 43px;
 }
 
-footer a{
+footer a {
     transition: 0.3s;
 }
 
-footer a:hover{
+footer a:hover {
     color: #1f3a93;
 }
