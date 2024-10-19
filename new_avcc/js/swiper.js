@@ -26,48 +26,49 @@ function SwiperImgLoading( parentElementId = '', imgPath = '', quantity = 0, hov
         slider.classList.add('swiper-slide');
         slider.setAttribute("lazy", "true"); //ленивая загрузка
         const pic = document.createElement('picture');
+
         const src = document.createElement('source');
         src.media = "(min-width: 768px)";
         src.srcset = imgPath+'big/'+i+'.png';
         const img = document.createElement('img');
         img.src = imgPath+'small/'+i+'.png';
+
         img.alt = `Slide ${i}`;
         img.loading = 'lazy'; //ленивая загрузка
         if ( hover ) {
             img.classList.add('img-hover');
 
             img.addEventListener('click', ()=>{
-            const bigImg = img.cloneNode();
+            const bigImg = pic.cloneNode(true);
             const cover =  document.createElement('div');
             const main = document.getElementById('main-total');
             const container = document.createElement('div');
-            cover.style.position = 'absolute';
-            cover.style.top = '0';
-            cover.style.bottom = '0';
-            cover.style.left = '0';
-            cover.style.right = '0';
+            // cover.style.position = 'absolute';
+            // cover.style.top = '0';
+            // cover.style.bottom = '0';
+            // cover.style.left = '0';
+            // cover.style.right = '0';
+            // cover.style.backgroundColor = '#fff';
+            // cover.style.zIndex = 10;
+            // cover.style.opacity = '0.8';
+            cover.classList.add('big-image-cover');
 
+            // container.style.position = 'absolute';
+            // container.style.zIndex = 11;
+            // container.style.backgroundColor = 'transparent';
+            // container.style.top = '0';
+            // container.style.bottom = '0';
+            // container.style.left = '0';
+            // container.style.right = '0';
+            // container.style.display = 'flex';
+            // container.style.alignItems = 'center';
+            container.classList.add('big-image-container');
 
-            cover.style.backgroundColor = '#fff';
-            cover.style.zIndex = 10;
-            cover.style.opacity = '0.8';
-
-            container.style.position = 'absolute';
-            container.style.zIndex = 11;
-            container.style.backgroundColor = 'transparent';
-            container.style.top = '0';
-            container.style.bottom = '0';
-            container.style.left = '0';
-            container.style.right = '0';
-            container.style.display = 'flex';
-            container.style.alignItems = 'center';
-
-            bigImg.style.backgroundColor = '#fff';
-            bigImg.style.border = '2px solid blue';
-            bigImg.style.borderRadius = '10px'
-            bigImg.style.margin = '5px';
-            bigImg.style.padding = '10px';
-
+            // bigImg.style.backgroundColor = '#fff';
+            // bigImg.style.border = '2px solid blue';
+            // bigImg.style.borderRadius = '10px'
+            // bigImg.style.margin = '5px';
+            // bigImg.style.padding = '10px';
             bigImg.classList.add('big-image');
 
             main.appendChild(cover);
@@ -83,8 +84,6 @@ function SwiperImgLoading( parentElementId = '', imgPath = '', quantity = 0, hov
             });
 
         }
-
-
 
         pic.appendChild(src);
         pic.appendChild(img);
