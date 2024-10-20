@@ -94,7 +94,7 @@ aside ul li{
 
 #left-menu-button{
     position: fixed;
-    left: 2px;
+    left: 4px;
     z-index: 5;
     border-radius: 5px;
     transform-origin: left bottom;
@@ -102,6 +102,8 @@ aside ul li{
     padding: 0;
     cursor: pointer;
     background-color: var(--background-color);
+    text-align: center;
+    transition: 0.2s;
 }
 
 .left-menu-button-pos{
@@ -119,7 +121,7 @@ aside ul li{
 
 #right-menu-button{
     position: fixed;
-    right: 2px;
+    right: 4px;
     z-index: 5;
     border-radius: 5px;
     transform-origin: right bottom;
@@ -127,6 +129,8 @@ aside ul li{
     padding: 0;
     cursor: pointer;
     background-color: var(--background-color);
+    text-align: center;
+    transition: 0.2s;
 }
 
 .right-menu-button-pos{
@@ -228,7 +232,7 @@ footer div a {
 
 #advertisement{
     display: grid;
-    grid-template-rows: 5px 50px;
+    grid-template-rows: 10px 50px;
 }
 
 #advertisement h6 {
@@ -238,19 +242,25 @@ footer div a {
 
 #advertisement div {
     display: flex;
-    flex-direction: row-reverse;
     justify-content: space-between;
+    align-items: center;
 }
 
-#advertisement div a {
+.by-me-coffee{
     background-color: var(--text-color);
     border-radius: 10px;
-    /* margin: auto 0; */
-    height: 100%;
+    height: 50px;
+    width: 50px;
 }
 
-#advertisement div a img{
-    height: 100%;
+#advertisement .by-me-coffee a{
+    height: 50px;
+    width: 50px;
+}
+
+#advertisement .by-me-coffee img{
+    height: 50px;
+    width: 50px;
     background-color: var(--text-color);
     border-radius: 10px;
 }
@@ -262,9 +272,7 @@ footer div a {
 .big-image-cover{
     position: absolute;
     top: 0;
-    /* bottom: 0; */
     left: 0;
-    /* right: 0; */
     width: 100vw;
     height: 100vh;
     background-color: #fff;
@@ -278,9 +286,7 @@ footer div a {
     z-index: 11;
     background-color: transparent;
     top: 0;
-    /* bottom: 0; */
     left: 0;
-    /* right: 0; */
     width: 100vw;
     height: 100vh;
     align-items: center;
